@@ -1,0 +1,6 @@
+framework module Pods_PKCSliceViewSwift {
+  umbrella header "Pods-PKCSliceViewSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

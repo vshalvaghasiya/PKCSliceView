@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PKCSliceViewSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TcT-A6-cql">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ff-NF-Ssa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thn-cT-Rdk">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="hKR-EB-TJZ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="Qcj-6E-Rdg"/>
+                                            <constraint firstItem="thn-cT-Rdk" firstAttribute="leading" secondItem="6ff-NF-Ssa" secondAttribute="leading" id="S5r-DR-PTB"/>
+                                            <constraint firstItem="thn-cT-Rdk" firstAttribute="top" secondItem="6ff-NF-Ssa" secondAttribute="top" id="eRd-Ir-axh"/>
+                                            <constraint firstAttribute="trailing" secondItem="thn-cT-Rdk" secondAttribute="trailing" id="vt3-nd-v0j"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98680263759999998" green="0.76270943879999997" blue="0.00388650992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6ff-NF-Ssa" secondAttribute="trailing" id="INY-Ku-uc9"/>
+                                    <constraint firstItem="6ff-NF-Ssa" firstAttribute="leading" secondItem="TcT-A6-cql" secondAttribute="leading" id="N7B-Do-sMa"/>
+                                    <constraint firstItem="6ff-NF-Ssa" firstAttribute="top" secondItem="TcT-A6-cql" secondAttribute="top" id="fAa-Ge-F4R"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TcT-A6-cql" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z68-MU-jPz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TcT-A6-cql" secondAttribute="bottom" id="Zbj-Xs-I8a"/>
+                            <constraint firstItem="TcT-A6-cql" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gu7-H4-qDy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TcT-A6-cql" secondAttribute="trailing" id="uiW-vo-5GW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mySliceView" destination="6ff-NF-Ssa" id="7gF-RJ-fr0"/>
+                        <outlet property="myview" destination="thn-cT-Rdk" id="d6E-cT-lZv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
